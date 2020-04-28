@@ -43,12 +43,12 @@ export default {
                      patternUnits="userSpaceOnUse"
                      x="-10"
                      y="30"
-                     width="200"
+                     width="100"
                      height="200">
                 <image :xlink:href="fill_image"
                        x="0"
                        y="0"
-                       width="200"
+                       width="100"
                        height="200" />
             </pattern>
         </defs>

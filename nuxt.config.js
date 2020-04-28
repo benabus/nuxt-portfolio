@@ -4,7 +4,7 @@ export default {
      ** Headers of the page
      */
     head: {
-        title:  "Ben Serrette's Portfolio",
+        title: "Ben Serrette's Portfolio",
         meta: [
             { charset: 'utf-8' },
             {
@@ -26,9 +26,7 @@ export default {
     /*
      ** Global CSS
      */
-    css: [
-        "@/assets/styles/custom.scss"
-    ],
+    css: ['@/assets/styles/custom.scss'],
     /*
      ** Plugins to load before mounting the App
      */
@@ -48,23 +46,30 @@ export default {
         'bootstrap-vue/nuxt',
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
-        ['nuxt-fontawesome', {
-            component: 'fa', 
-            imports: [
-            //   import whole set
-              {
-                set: '@fortawesome/free-solid-svg-icons',
-                icons: ["fas", "faBars"]
-              },
-              // import 2 icons from set 
-              // please note this is PRO set in this example, 
-              // you must have it in your node_modules to actually import
-            //   {
-            //     set: '@fortawesome/pro-regular-svg-icons',
-            //     icons: ['bars']
-            //   }
-            ]
-          }]
+        [
+            'nuxt-fontawesome',
+            {
+                component: 'fa',
+                imports: [
+                    //   import whole set
+                    {
+                        set: '@fortawesome/free-solid-svg-icons',
+                        icons: ['fas', 'faBars']
+                    },
+                    {
+                        set: '@fortawesome/free-brands-svg-icons',
+                        icons: ['fab', 'faGithubSquare', 'faGithub', 'faLinkedin']
+                    }
+                    // import 2 icons from set
+                    // please note this is PRO set in this example,
+                    // you must have it in your node_modules to actually import
+                    //   {
+                    //     set: '@fortawesome/pro-regular-svg-icons',
+                    //     icons: ['bars']
+                    //   }
+                ]
+            }
+        ]
     ],
     bootstrapVue: {
         bootstrapCSS: false, // Or `css: false`
