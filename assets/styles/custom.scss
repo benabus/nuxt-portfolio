@@ -21,6 +21,11 @@
     font-style: normal;
 }
 
+hr {
+    overflow: auto;
+}
+
+
 body,
 html {
     font-family: 'Comic Sans', 'Comic Sans MS', 'MS Comic Sans',
@@ -31,7 +36,12 @@ html {
     position: relative;
     top: -$top-margin;
 }
-section {
+p, li, h1, h2, h3, footer, .subtitle {
+    text-shadow: $text-outline-1;
+}
+
+h1, h2{
+    color: $yellow;
     text-shadow: $text-outline-1;
 }
 
@@ -55,6 +65,8 @@ section {
         }
     }
 }
+
+
 
 // h1.playbill-small {
 //     font-family: 'playbillregular', 'Comic Sans', 'Comic Sans MS',

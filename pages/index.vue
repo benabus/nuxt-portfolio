@@ -3,12 +3,15 @@
 import HeroSection from '@/components/hero';
 import AboutSection from '@/components/about';
 import SkillsSection from '@/components/skills';
+import ProjectsSection from '@/components/projects';
+
 
 export default {
     components: {
         HeroSection,
         AboutSection,
-        SkillsSection
+        SkillsSection,
+        ProjectsSection
     },
     data() {
         return {};
@@ -44,13 +47,11 @@ export default {
             <h2>Enumerated Qualifications</h2>
             <skills-section></skills-section>
         </section>
+        <hr />
+        <section>
+            <a id="projects" class="bookmark"></a>
+            <h2>Software Projects</h2>
+            <projects-section></projects-section>
+        </section>
     </div>
 </template>
-<style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
-
-h2 {
-    color: $yellow;
-    text-shadow: $text-outline-1;
-}
-</style>

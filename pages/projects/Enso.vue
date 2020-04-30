@@ -1,5 +1,28 @@
+<script>
+export default {
+    data() {
+        return {
+            title: "Enso",
+            subtitle: "Enso Network Software",
+            cover_image: "/assets/img/project_covers/enso.png",
+            blurb: ""
+        };
+    }
+}
+</script>
+
 <template>
     <div>
+        <div class="card float-md-right ml-md-3">
+            <img class="card-img-top" :src="cover_image" />
+            <div class="figure-caption text-center card-body">The original Enso Logo</div>
+        </div>
+
+        <h1 v-text="title"></h1>
+        <div class="subtitle" v-text="subtitle"></div>
+
+        <hr />
+
         <p>
             Project Enso is currently being developed at the
             <a href="http://iuni.iu.edu"
@@ -24,6 +47,3 @@
 
     </div>
 </template>
-<script>
-export default {};
-</script>

@@ -29,7 +29,7 @@ export default {
         <nav class="navbar navbar-expand-lg">
             <div class="container d-flex align-items-end justify-content-between">
                 <a class="navbar-brand"
-                   href="#">
+                   href="/">
                     <div class="d-flex">
                         <div class="navbar-poncho">
                             <poncho />
@@ -60,6 +60,11 @@ export default {
                             <a class="nav-link"
                                href="/#skills">Skills</a>
                         </li>
+                        <li class="nav-item"
+                            @click="closeMenu()">
+                            <a class="nav-link"
+                               href="/#projects">Projects</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -68,6 +73,8 @@ export default {
         <main class="container">
             <nuxt />
         </main>
+
+        <hr class="clearfix invisible" />
 
         <footer>
             <div>
@@ -100,8 +107,7 @@ nav {
 .navbar-brand {
     overflow: hidden;
 }
-.toggle-button
-{
+.toggle-button {
     color: $yellow;
     font-size: 2rem;
 }

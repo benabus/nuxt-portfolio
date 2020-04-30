@@ -1,7 +1,29 @@
+<script>
+export default {
+    data() {
+        return {
+            title: "OSoMe",
+            subtitle: "Observatory on Social Media",
+            cover_image: "/assets/img/project_covers/osome.png",
+            blurb: ""
+        };
+    }
+}
+</script>
+
 <template>
     <div>
-        <blockquote class="">
-            <h3 class="h4">What is the Observatory on Social Media?</h3>
+        <div class="card float-md-right ml-md-3 mb-md-3 col-md-4">
+            <img class="card-img-top" :src="cover_image" />
+            <div class="figure-caption text-center card-body">Screenshot from OSoMe Network Tool</div>
+        </div>
+
+        <h1 v-text="title"></h1>
+        <div class="subtitle" v-text="subtitle"></div>
+
+        <hr />
+        <blockquote class="blockquote">
+            <h2>What is the Observatory on Social Media?</h2>
             <p>
                 The Observatory on Social Media is a set of tools resulting from a broad research project that seeks to study how memes spread online. Our first application was the study of astroturfing: memes promoted by social bots to create the appearance of a grassroots movement. Our first demo to visualize the spread of memes on Twitter was nicknamed Truthy. The word, suggested by a graduate student, comes from a term popularized by Stephen Colbert, truthiness, which describes claims that feel like they ought to be true, but aren't necessarily.
             </p>
@@ -22,6 +44,3 @@
         </p>
     </div>
 </template>
-<script>
-export default {};
-</script>

@@ -51,7 +51,7 @@ export default {
             As a front-end mid stack web developer, I do it all. I'm just better at front-ends and middleware. Interfaces and APIs with a sprinkle of database and system administration as necessary.
         </p>
         <p>
-            Web development has been in my blood since the late 1990's (Geocities, anyone?) and I've been coding professionally since 2005. On the side, I occasionally make comics and illustrations. My design skills aren't too bad, but I do fancy Comic Sans because it’s fun, it’s easy, and pretentious artsy designer types hate it.
+            Web development has been in my blood since the late 1990's (Geocities, anyone?) and I've been coding professionally since 2005. On the side, I occasionally make comics and illustrations. My design skills aren't too bad, but I do fancy Comic Sans because it’s fun and pretentious artsy designer types hate it.
         </p>
         <p>
             I have a BS in Business Administration with a major in Management of Information Systems and an MS in Human Computer Interaction design. I'm also a certified Professional Scrum Master (PSM-I) and an ordained minister, which is great if you want to get married and then plan your first sprint at the reception.
