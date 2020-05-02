@@ -1,30 +1,12 @@
 <script>
 export default {
-    data() {
-        return {
-            title: 'Hoaxy',
-            subtitle: '',
-            cover_image: '/assets/img/project_covers/hoaxylogo.png',
-            cover_image_alt: 'The Hoaxy Logo',
-            blurb: ''
-        };
-    }
+    layout: "project"
 };
 </script>
 
 <template>
     <div>
-        <div class="card float-md-right ml-md-3 mb-md-3 col-md-4">
-            <img class="card-img-top"
-                 :src="cover_image" :alt="cover_image_alt" />
-            <div class="figure-caption text-center card-body">The Hoaxy logo</div>
-        </div>
 
-        <h1 v-text="title"></h1>
-        <div class="subtitle"
-             v-text="subtitle"></div>
-
-        <hr />
         <blockquote class="blockquote">
             <p>
                 Hoaxy is a tool that visualizes the spread of articles online. Articles can be found on Twitter, or in a corpus of claims and related fact checking.

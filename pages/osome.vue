@@ -1,28 +1,7 @@
 <script>
 export default {
-    
-    layout: 'project',
-    head() {
-        return {
-            title:'OSoMe',
-            meta: [
-                { 'hid': "page-title", name:"page-title", content: 'OSoMe'},
-                { 'hid': "page-subtitle", name:"page-subtitle", content: 'Observatory on Social Media'},
-                { 'hid': "page-cover-image", name:"page-cover-image", content: '/assets/img/project_covers/osome.png'},
-                { 'hid': "page-blurb", name:"page-blurb", content: ''},
-                { 'hid': "page-cover-image-caption", name:"page-cover-image-caption", content: 'Screenshot from OSoMe Network Tool'}
-            ]
-        };
-    }
-    // data() {
-    //     return {
-    //         title: "OSoMe",
-    //         subtitle: "Observatory on Social Media",
-    //         cover_image: "/assets/img/project_covers/osome.png",
-    //         blurb: ""
-    //     };
-    // }
-}
+    layout: 'project'
+};
 </script>
 
 <template>
@@ -41,11 +20,12 @@ export default {
         </blockquote>
 
         <p>
-            The backend of OSoMe utilizes a sophisticated query tool on top of a custom HBase database.  I had nothing to do with any of that.
+            The backend of OSoMe utilizes a sophisticated query tool on top of a custom HBase database. I had nothing to do with any of that.
         </p>
 
         <p>
-            My primary contribution to OSoMe has been the <a href="http://osome.iuni.iu.edu/tools/networks/" target="_blank">Diffusion Network Graph</a>.  The interface was created using Angular 1.x and Zurb Foundation.  The middleware uses Python 3 and NetworkX.  It also uses Redis for caching and connects to the database using Celery.
+            My primary contribution to OSoMe has been the <a href="http://osome.iuni.iu.edu/tools/networks/"
+               target="_blank">Diffusion Network Graph</a>. The interface was created using Angular 1.x and Zurb Foundation. The middleware uses Python 3 and NetworkX. It also uses Redis for caching and connects to the database using Celery.
         </p>
     </div>
 </template>

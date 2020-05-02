@@ -2,39 +2,31 @@
 import HeaderNav from '@/components/header';
 import MainFooter from '@/components/footer';
 
+import Pages from '@/assets/pages_data.js';
+
 export default {
     components: {
         HeaderNav,
         MainFooter
     },
     data() {
-        return {
-            page: {
-                title: '',
-                'cover-image': '',
-                'cover-image-caption': '',
-                subtitle: '',
-                blurb: ''
-            }
-        };
+        return {};
     },
     computed: {
-        meta() {
-            return (
-                (this.$refs.page &&
-                    this.$refs.page.$children &&
-                    this.$refs.page.$children[0].$metaInfo) ||
-                {}
-            );
+        page_name() {
+            return this.$route.name;
+        },
+        page() {
+            return Pages[this.page_name] || {};
         },
         title() {
             return this.page.title;
         },
         cover_image() {
-            return this.page['cover-image'];
+            return this.page.cover_image;
         },
         cover_image_caption() {
-            return this.page['cover-image-caption'];
+            return this.page.cover_image_caption;
         },
         subtitle() {
             return this.page.subtitle;
@@ -43,47 +35,10 @@ export default {
             return this.page.blurb;
         }
     },
-    // created() {
-    //     // const meta = this.$refs.page.$children[0].$metaInfo.meta;
-    //     if (process.browser) {
-    //         for (const item of Object.keys(this.page)) {
-    //             // eslint-disable-next-line nuxt/no-globals-in-created
-    //             const elem = document.querySelector(
-    //                 `[data-hid="page-${name}"]`
-    //             );
-    //             if (!elem) {
-    //                 return '';
-    //             }
-    //             this.page[item] = elem.getAttribute('content');
-    //         }
-    //     } else {
-    //         // console.debug(meta);
-    //     }
-
-    //     console.debug(this.page.title);
-    // },
-    mounted() {
-        const meta = this.$refs.page.$children[0].$metaInfo.meta;
-        for (const item of meta) {
-            const key = item.hid.split('page-')[1];
-            this.page[key] = item.content;
-        }
-        if (process.browser) {
-            for (const item of Object.keys(this.page)) {
-                const elem = document.querySelector(
-                    `[data-hid="page-${name}"]`
-                );
-                if (!elem) {
-                    return '';
-                }
-                this.page[item] = elem.getAttribute('content');
-            }
-        } else {
-            console.debug(meta);
-        }
-    },
+    mounted() {},
     head() {
         return {
+            title: this.page.title,
             titleTemplate: "%s - Ben Serrette's Portfolio"
         };
     }
@@ -97,7 +52,7 @@ export default {
         <header-nav />
         <main class="container">
             <div v-if="cover_image"
-                 class="card float-md-right ml-md-3">
+                 class="card float-md-right mb-3 ml-md-3 col-12 col-md-4">
                 <img class="card-img-top"
                      :src="cover_image"
                      :alt="cover_image_caption" />

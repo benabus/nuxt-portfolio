@@ -1,18 +1,6 @@
 <script>
 export default {
-    layout: 'project',
-    head() {
-        return {
-            title:'Enso',
-            meta: [
-                { 'hid': "page-title", name:"page-title", content: 'Enso'},
-                { 'hid': "page-subtitle", name:"page-subtitle", content: 'Enso Network Software'},
-                { 'hid': "page-cover-image", name:"page-cover-image", content: '/assets/img/project_covers/enso.png'},
-                { 'hid': "page-blurb", name:"page-blurb", content: ''},
-                { 'hid': "page-cover-image-caption", name:"page-cover-image-caption", content: 'The original Enso Logo'}
-            ]
-        };
-    }
+    layout: 'project'
 };
 </script>
 
