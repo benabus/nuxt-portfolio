@@ -26,6 +26,13 @@ const pages = {
         cover_image: '/assets/img/project_covers/hoaxylogo.png',
         cover_image_alt: 'The Hoaxy Logo',
         blurb: ''
+    },
+    "an-illustrated-guide-to-programming-for-absolute-beginners-and-the-computer-illiterate": {
+        type: 'illustration',
+        stub: 'an-illustrated-guide-to-programming-for-absolute-beginners-and-the-computer-illiterate',
+        title: "An Illustrated Guide to Programming",
+        cover_image: '/assets/img/project_covers/book.jpg',
+        cover_image_caption: "Cover of An Illustrated Guide to Programming for Absolute Beginners and the Computer Illiterate"
     }
 };
 
