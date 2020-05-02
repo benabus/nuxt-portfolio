@@ -42,7 +42,7 @@ export default {
 
 
 <template>
-    <div>
+    <div >
         <figure class="float-right text-center col-5 col-sm-5 col-md-4 col-lg-3 p-0 pl-4 mb-0">
             <img class="figure-img img-fluid rounded m-0"
                  :src="'/assets/img/tie.jpg'" />

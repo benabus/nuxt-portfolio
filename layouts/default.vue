@@ -70,7 +70,7 @@ export default {
             </div>
         </nav>
 
-        <main class="container">
+        <main>
             <nuxt />
         </main>
 

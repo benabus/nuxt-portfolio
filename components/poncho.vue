@@ -43,13 +43,13 @@ export default {
                      patternUnits="userSpaceOnUse"
                      x="0"
                      y="0"
-                     width="150"
-                     height="300">
+                     width="75"
+                     height="150">
                 <image :xlink:href="fill_image"
                        x="0"
                        y="0"
-                       width="150"
-                       height="300" />
+                       width="75"
+                       height="150" />
             </pattern>
         </defs>
         <g id="Layer_1">
