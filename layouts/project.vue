@@ -43,6 +43,25 @@ export default {
             return this.page.blurb;
         }
     },
+    // created() {
+    //     // const meta = this.$refs.page.$children[0].$metaInfo.meta;
+    //     if (process.browser) {
+    //         for (const item of Object.keys(this.page)) {
+    //             // eslint-disable-next-line nuxt/no-globals-in-created
+    //             const elem = document.querySelector(
+    //                 `[data-hid="page-${name}"]`
+    //             );
+    //             if (!elem) {
+    //                 return '';
+    //             }
+    //             this.page[item] = elem.getAttribute('content');
+    //         }
+    //     } else {
+    //         // console.debug(meta);
+    //     }
+
+    //     console.debug(this.page.title);
+    // },
     mounted() {
         const meta = this.$refs.page.$children[0].$metaInfo.meta;
         for (const item of meta) {
@@ -60,8 +79,7 @@ export default {
                 this.page[item] = elem.getAttribute('content');
             }
         } else {
-            // return '';
-            // console.debug('TEST');
+            console.debug(meta);
         }
     },
     head() {

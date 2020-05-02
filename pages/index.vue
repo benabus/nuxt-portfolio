@@ -19,10 +19,11 @@ export default {
     computed: {},
     mounted() {},
     methods: {},
-    head(){
+
+    head() {
         return {
-            // title: "THIS IS A TEST"
-        }
+            titleTemplate: "Ben Serrette's Portfolio"
+        };
     }
 };
 </script>

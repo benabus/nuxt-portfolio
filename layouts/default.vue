@@ -6,6 +6,11 @@ export default {
     components: {
         HeaderNav,
         MainFooter
+    },
+    head() {
+        return {
+            titleTemplate: "%s - Ben Serrette's Portfolio"
+        };
     }
 };
 </script>
