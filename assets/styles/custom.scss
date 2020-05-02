@@ -52,6 +52,9 @@ h1, h2{
     text-shadow: $text-outline-1;
 }
 
+main {
+    margin-top: $top-margin;
+}
 
 @include media-breakpoint-up(md) {
     .hero-container {

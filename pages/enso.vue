@@ -1,27 +1,23 @@
 <script>
 export default {
-    data() {
+    layout: 'project',
+    head() {
         return {
-            title: "Enso",
-            subtitle: "Enso Network Software",
-            cover_image: "/assets/img/project_covers/enso.png",
-            blurb: ""
+            title:'Enso',
+            meta: [
+                { 'hid': "page-title", name:"page-title", content: 'Enso'},
+                { 'hid': "page-subtitle", name:"page-subtitle", content: 'Enso Network Software'},
+                { 'hid': "page-cover-image", name:"page-cover-image", content: '/assets/img/project_covers/enso.png'},
+                { 'hid': "page-blurb", name:"page-blurb", content: ''},
+                { 'hid': "page-cover-image-caption", name:"page-cover-image-caption", content: 'The original Enso Logo'}
+            ]
         };
     }
-}
+};
 </script>
 
 <template>
     <div>
-        <div class="card float-md-right ml-md-3">
-            <img class="card-img-top" :src="cover_image" />
-            <div class="figure-caption text-center card-body">The original Enso Logo</div>
-        </div>
-
-        <h1 v-text="title"></h1>
-        <div class="subtitle" v-text="subtitle"></div>
-
-        <hr />
 
         <p>
             Project Enso is currently being developed at the

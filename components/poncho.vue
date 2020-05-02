@@ -41,7 +41,7 @@ export default {
         <defs v-if="fill_image">
             <pattern id="bg_image"
                      patternUnits="userSpaceOnUse"
-                     x="0"
+                     x="45"
                      y="0"
                      width="75"
                      height="150">

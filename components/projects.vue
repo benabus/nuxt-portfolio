@@ -1,15 +1,24 @@
 <script>
-import Cadre from '@/pages/cadre';
+// import Cadre from '@/pages/cadre';
 import Enso from '@/pages/enso';
-import Hoaxy from '@/pages/hoaxy';
+// import Hoaxy from '@/pages/hoaxy';
 import Osome from '@/pages/osome';
-
+// console.debug(Enso.head().meta);
 const PROJECT_DATA = {
-    cadre: Cadre.data(),
-    enso: Enso.data(),
-    hoaxy: Hoaxy.data(),
-    osome: Osome.data()
+    // cadre: Cadre.head().meta,
+    enso: parseMetaData(Enso.head().meta),
+    // hoaxy: Hoaxy.head().meta,
+    osome: parseMetaData(Osome.head().meta)
 };
+
+function parseMetaData(meta) {
+    const tmp = {};
+    for (const item of meta) {
+        const key = item.hid.split('page-')[1];
+        tmp[key] = item.content;
+    }
+    return tmp;
+}
 
 export default {
     data() {
@@ -29,16 +38,17 @@ export default {
                 <a :href="`/${stub}`">
                     <div class="card-img-top"
                          :style="{
-                            'background-image': `url(${project.cover_image})`
+                            'background-image': `url(${project['cover-image']})`
                          }">
                         <img class=""
-                             :src="project.cover_image"
-                             :alt="project.cover_image_alt || 'Project Image'" />
+                             :src="project['cover-image']"
+                             :alt="project['cover-image-caption'] || 'Project Image'" />
                     </div>
                     <div class="card-body">
-                        <h3 v-text="project.title"></h3>
-                        <div class="subtitle" v-text="project.subtitle"></div>
-                        <p v-text="project.blurb"></p>
+                        <h3 v-text="project['title']"></h3>
+                        <div class="subtitle"
+                             v-text="project['subtitle']"></div>
+                        <p v-text="project['blurb']"></p>
                     </div>
                 </a>
             </div>
@@ -56,9 +66,8 @@ export default {
         max-width: 100%;
         display: none;
     }
-} 
-a
-{
+}
+a {
     text-decoration: none;
 }
 </style>

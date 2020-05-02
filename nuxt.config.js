@@ -4,7 +4,7 @@ export default {
      ** Headers of the page
      */
     head: {
-        title: "Ben Serrette's Portfolio",
+        // titleTemplate: '%s - Ben Serrette\'s Portfolio',
         meta: [
             { charset: 'utf-8' },
             {
