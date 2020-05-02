@@ -1,8 +1,8 @@
 <script>
-import Cadre from '@/pages/projects/cadre';
-import Enso from '@/pages/projects/enso';
-import Hoaxy from '@/pages/projects/hoaxy';
-import Osome from '@/pages/projects/osome';
+import Cadre from '@/pages/cadre';
+import Enso from '@/pages/enso';
+import Hoaxy from '@/pages/hoaxy';
+import Osome from '@/pages/osome';
 
 const PROJECT_DATA = {
     cadre: Cadre.data(),
@@ -26,7 +26,7 @@ export default {
              :key="stub"
              class=" col-md-4 mb-3">
             <div class="card">
-                <a :href="`/projects/${stub}`">
+                <a :href="`/${stub}`">
                     <div class="card-img-top"
                          :style="{
                             'background-image': `url(${project.cover_image})`
