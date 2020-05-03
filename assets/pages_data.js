@@ -27,47 +27,44 @@ const pages = {
         cover_image_alt: 'The Hoaxy Logo',
         blurb: ''
     },
-    "an-illustrated-guide-to-programming-for-absolute-beginners-and-the-computer-illiterate": {
+    'an-illustrated-guide-to-programming-for-absolute-beginners-and-the-computer-illiterate': {
         type: 'illustration',
-        stub: 'an-illustrated-guide-to-programming-for-absolute-beginners-and-the-computer-illiterate',
-        title: "An Illustrated Guide to Programming",
-        subtitle: "for Absolute Beginners and the Computer Illiterate",
+        stub:
+            'an-illustrated-guide-to-programming-for-absolute-beginners-and-the-computer-illiterate',
+        title: 'An Illustrated Guide to Programming',
+        subtitle: 'for Absolute Beginners and the Computer Illiterate',
         cover_image: '/assets/img/project_covers/book.jpg',
-        cover_image_caption: "Cover of An Illustrated Guide to Programming for Absolute Beginners and the Computer Illiterate"
+        cover_image_caption:
+            'Cover of An Illustrated Guide to Programming for Absolute Beginners and the Computer Illiterate'
     },
     cadre: {
         type: 'software',
-        stub: "cadre",
-        title: "CADRE",
-        subtitle: "Collaborative Archive & Data Research Environment",
+        stub: 'cadre',
+        title: 'CADRE',
+        subtitle: 'Collaborative Archive & Data Research Environment',
         cover_image: '/assets/img/project_covers/cadre.jpg'
     },
-    "imls-video": {
-        type: "illustration",
-        stub: "cadre-video",
-        title: "IMLS Video",
-        subtitle: "Animated introduction video for CADRE."
+    'imls-video': {
+        type: 'illustration',
+        stub: 'cadre-video',
+        title: 'IMLS Video',
+        subtitle: 'Animated introduction video for CADRE',
+        cover_image: '/assets/img/project_covers/imls_video.jpg'
     },
-    // thadj: {
-    //     type: "illustration",
-    //     stub: "thadj",
-    //     title: "Toilet Humor and Dick Jokes",
-        
-    // },
-    "shake-it-tarot": {
-        type: "software",
-        stub: "shake-it-tarot",
-        title: "Shake It Tarot",
-        subtitle: "Tarot Card Android app",
-        cover_image: "/assets/img/project_covers/TarotIcon512.png"
+    'shake-it-tarot': {
+        type: 'software',
+        stub: 'shake-it-tarot',
+        title: 'Shake It Tarot',
+        subtitle: 'Tarot Card Android app',
+        cover_image: '/assets/img/project_covers/TarotIcon512.png'
     },
     comics: {
-        type: "illustration",
-        stub: "comics",
-        title: "Comics",
-        subtitle: "Storytelling with Sequential Art",
-        cover_image: "/assets/img/project_covers/thadj.png",
-        cover_image_caption: "Single panel from Toilet Humor and Dick Jokes"
+        type: 'illustration',
+        stub: 'comics',
+        title: 'Comics',
+        subtitle: 'Storytelling with Sequential Art',
+        cover_image: '/assets/img/project_covers/thadj.png',
+        cover_image_caption: 'Single panel from Toilet Humor and Dick Jokes'
     }
 };
 
