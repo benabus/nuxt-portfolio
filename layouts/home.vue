@@ -2,22 +2,11 @@
 import HeaderNav from '@/components/header';
 import MainFooter from '@/components/footer';
 
-
 export default {
     components: {
         HeaderNav,
         MainFooter
     },
-    data() {
-        return {};
-    },
-    computed: {
-        page_name() {
-            return this.$route.name;
-        },
-
-    },
-    mounted() {},
     head() {
         return {
             titleTemplate: "%s - Ben Serrette's Portfolio"
@@ -31,8 +20,9 @@ export default {
     <div>
 
         <header-nav />
-        <main class="container">
-            <nuxt ref="page" />
+
+        <main>
+            <nuxt />
         </main>
 
         <main-footer />
@@ -41,4 +31,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
 </style>

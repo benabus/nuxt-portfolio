@@ -64,7 +64,10 @@ const pages = {
     comics: {
         type: "illustration",
         stub: "comics",
-        title: "Comics"
+        title: "Comics",
+        subtitle: "Storytelling with Sequential Art",
+        cover_image: "/assets/img/project_covers/thadj.png",
+        cover_image_caption: "Single panel from Toilet Humor and Dick Jokes"
     }
 };
 
