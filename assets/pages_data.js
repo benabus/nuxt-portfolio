@@ -31,8 +31,40 @@ const pages = {
         type: 'illustration',
         stub: 'an-illustrated-guide-to-programming-for-absolute-beginners-and-the-computer-illiterate',
         title: "An Illustrated Guide to Programming",
+        subtitle: "for Absolute Beginners and the Computer Illiterate",
         cover_image: '/assets/img/project_covers/book.jpg',
         cover_image_caption: "Cover of An Illustrated Guide to Programming for Absolute Beginners and the Computer Illiterate"
+    },
+    cadre: {
+        type: 'software',
+        stub: "cadre",
+        title: "CADRE",
+        subtitle: "Collaborative Archive & Data Research Environment",
+        cover_image: '/assets/img/project_covers/cadre.jpg'
+    },
+    "imls-video": {
+        type: "illustration",
+        stub: "cadre-video",
+        title: "IMLS Video",
+        subtitle: "Animated introduction video for CADRE."
+    },
+    // thadj: {
+    //     type: "illustration",
+    //     stub: "thadj",
+    //     title: "Toilet Humor and Dick Jokes",
+        
+    // },
+    "shake-it-tarot": {
+        type: "software",
+        stub: "shake-it-tarot",
+        title: "Shake It Tarot",
+        subtitle: "Tarot Card Android app",
+        cover_image: "/assets/img/project_covers/TarotIcon512.png"
+    },
+    comics: {
+        type: "illustration",
+        stub: "comics",
+        title: "Comics"
     }
 };
 

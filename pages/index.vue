@@ -54,5 +54,11 @@ export default {
             <h2>Software Projects</h2>
             <projects-section></projects-section>
         </section>
+        <hr class="" />
+        <section class="container">
+            <a id="illustration" class="bookmark"></a>
+            <h2>Illustrations</h2>
+            <projects-section project-type="illustration"></projects-section>
+        </section>
     </div>
 </template>

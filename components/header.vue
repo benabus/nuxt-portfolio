@@ -25,8 +25,8 @@ export default {
 <template>
     <nav class="navbar navbar-expand-lg">
         <div class="container d-flex align-items-end justify-content-between">
-            <a class="navbar-brand"
-               href="/">
+            <nuxt-link class="navbar-brand"
+               to="/">
                 <div class="d-flex">
                     <div class="navbar-poncho">
                         <poncho />
@@ -36,7 +36,7 @@ export default {
                         <span>Serrette</span>
                     </div>
                 </div>
-            </a>
+            </nuxt-link>
             <button class="navbar-toggler toggle-button"
                     type="button"
                     aria-controls="navbarContent"
@@ -49,18 +49,23 @@ export default {
                 <ul class="navbar-nav">
                     <li class="nav-item"
                         @click="closeMenu()">
-                        <a class="nav-link"
-                           href="/#about">About</a>
+                        <nuxt-link class="nav-link"
+                           to="/#about">About</nuxt-link>
                     </li>
                     <li class="nav-item"
                         @click="closeMenu()">
-                        <a class="nav-link"
-                           href="/#skills">Skills</a>
+                        <nuxt-link class="nav-link"
+                           to="/#skills">Skills</nuxt-link>
                     </li>
                     <li class="nav-item"
                         @click="closeMenu()">
-                        <a class="nav-link"
-                           href="/#projects">Projects</a>
+                        <nuxt-link class="nav-link"
+                           to="/#projects">Development</nuxt-link>
+                    </li>
+                    <li class="nav-item"
+                        @click="closeMenu()">
+                        <nuxt-link class="nav-link"
+                           to="/#illustration">Illustration</nuxt-link>
                     </li>
                 </ul>
             </div>

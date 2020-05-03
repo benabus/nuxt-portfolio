@@ -1,3 +1,8 @@
+
+<script>
+export default {layout: "project"};
+</script>
+
 <template>
     <div>
         <p>
@@ -84,6 +89,3 @@
         </ul>
     </div>
 </template>
-<script>
-export default {};
-</script>
