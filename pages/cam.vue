@@ -1,3 +1,8 @@
+<script>
+export default {
+    layout: "project"
+};
+</script>
 <template>
     <div>
         <blockquote>
@@ -6,7 +11,7 @@
             </p>
             <footer class="blockquote-footer">
                 <cite>
-                    <a href="http://iuni.iu.edu/resources/cam"
+                    <a href="http://iuni.iu.edu/projects/cam"
                        target="_blank">The IUNI Website</a>
                 </cite>
             </footer>
@@ -19,6 +24,3 @@
         </p>
     </div>
 </template>
-<script>
-export default {};
-</script>

@@ -22,7 +22,7 @@ const pages = {
         type: 'software',
         stub: 'haoxy',
         title: 'Hoaxy',
-        subtitle: '',
+        subtitle: 'Misinformation Research Tool',
         cover_image: '/assets/img/project_covers/hoaxylogo.png',
         cover_image_alt: 'The Hoaxy Logo',
         blurb: ''
@@ -58,6 +58,15 @@ const pages = {
         subtitle: 'Tarot Card Android app',
         cover_image: '/assets/img/project_covers/TarotIcon512.png'
     },
+    cam: {
+        type: 'software',
+        stub: 'cam',
+        title: 'CAM',
+        subtitle: 'Conference Agenda Manager',
+        // blurb: `CAM is a system that allows conference organizers to create a database of events and attendees to create customized agendas.`,
+        cover_image: '/assets/img/project_covers/cam_logo.png',
+        cover_image_caption: 'CAM Logo'
+    },
     comics: {
         type: 'illustration',
         stub: 'comics',
@@ -65,7 +74,24 @@ const pages = {
         subtitle: 'Storytelling with Sequential Art',
         cover_image: '/assets/img/project_covers/thadj.png',
         cover_image_caption: 'Single panel from Toilet Humor and Dick Jokes'
-    }
+    },
+    "infinite-canvas": {
+        type: 'software',
+        stub: 'infinite-canvas',
+        title: 'Infinite Canvas 2.0',
+        subtitle: '2010 Masters capstone project',
+        cover_image: '/assets/img/project_covers/capstone_mockup1.png',
+        cover_image_caption: 'Mockup of The Infinite Canvas 2.0',
+        blurb: `Technological Innovations in Social Storytelling with Sequential Art`
+    },
+    "captain-numbskull": {
+        type: 'illustration',
+        stub: 'captain-numbskull',
+        title: 'Captain Numbskull',
+        subtitle: 'in Space',
+        cover_image: '/assets/img/project_covers/numbskullProof.jpg',
+        cover_image_caption: 'First printing of Captain Numbskull #1'
+    },
 };
 
 const software = {};

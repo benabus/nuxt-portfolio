@@ -1,3 +1,10 @@
+
+<script>
+export default
+{
+    layout: "project"
+};
+</script>
 <template>
 <div>
 
@@ -10,21 +17,25 @@
         social arena of Web 2.0.
     </p>
     <p>
-        The prototype can be found <a href="/assets/files/infinite_canvas_2.0_prototype/" target="_blank">here</a> and was built using JQuery.
+        The prototype was built using JQuery.
     </p>
     <p>
         The final paper can be found <a
-        href="/assets/files/infinite-canvas/Capstone_paper.pdf"
+        href="/assets/files/Capstone_paper.pdf"
         target="_blank">here (.pdf, 3.49MB)</a>.
     </p>
 
     <p>
         The final presentation can be viewed as a PDF <a
-        href="/assets/files/infinite-canvas/Capstone_presentation.pdf"
-        target="_blank">here (.pdf, 11.6MB)</a> or downloaded as a PowerPoint
+        href="/assets/files/Capstone_presentation.pdf"
+        target="_blank">here (.pdf, 11.6MB)</a>.
+        
+         <!-- or downloaded as a PowerPoint
         file here <a
         href="/assets/files/infinite-canvas/capstone_presentation.pptx"
-        target="_blank">(.pptx, 26.5MB)</a>. A video of the final presentation
+        target="_blank">(.pptx, 26.5MB)</a>.  -->
+        
+        A video of the final presentation
         can be found here: <a href="http://vimeo.com/13216700"
         target="_blank">http://vimeo.com/13216700</a>.
     </p>
@@ -82,13 +93,9 @@
     </p>
     <p>
         Continue reading the final paper <a
-        href="/assets/files/infinite-canvas/Capstone_paper.pdf"
+        href="/assets/files/Capstone_paper.pdf"
         target="_blank">here (.pdf, 3.49MB)</a>.
     </p>
 
 </div>
 </template>
-<script>
-export default
-{};
-</script>

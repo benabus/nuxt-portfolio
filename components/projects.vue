@@ -36,7 +36,7 @@ export default {
                         <h3 v-text="project.title"></h3>
                         <div class="subtitle"
                              v-text="project.subtitle"></div>
-                        <p v-text="project.blurb"></p>
+                        <!-- <p v-text="project.blurb"></p> -->
                     </div>
                 </nuxt-link>
             </div>
@@ -54,6 +54,10 @@ export default {
         max-width: 100%;
         display: none;
     }
+}
+.card
+{
+    height: 100%;
 }
 a {
     text-decoration: none;

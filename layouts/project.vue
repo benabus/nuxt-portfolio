@@ -65,6 +65,10 @@ export default {
             <div class="subtitle"
                  v-text="subtitle"></div>
 
+            <p v-if="blurb"
+               class="pt-3"
+               v-text="blurb"></p>
+
             <hr />
 
             <nuxt ref="page" />
