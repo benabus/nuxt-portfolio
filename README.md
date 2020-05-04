@@ -1,5 +1,9 @@
 # portfolio
 
+Visit the live site at:
+
+http://benserrette.com
+
 > Ben Serrette&#39;s Porfolio
 
 ## Build Setup
