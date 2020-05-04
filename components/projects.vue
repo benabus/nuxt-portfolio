@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <div class="d-flex flex-wrap mt-3">
+    <div class="d-flex flex-wrap mt-3 justify-content-center">
         <div v-for="(project, stub) in project_data"
              :key="stub"
              class=" col-md-4 mb-3">
