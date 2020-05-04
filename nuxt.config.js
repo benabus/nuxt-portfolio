@@ -15,9 +15,35 @@ export default {
                 hid: 'description',
                 name: 'description',
                 content: process.env.npm_package_description || ''
-            }
+            },
+            { name: 'msapplication-TileColor', content: '#800080' },
+            { name: 'theme-color', content: '#ffffff' }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [
+            {
+                rel: 'apple-touch-icon',
+                sizes: '180x180',
+                href: '/apple-touch-icon.png'
+            },
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '32x32',
+                href: '/favicon-32x32.png'
+            },
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '16x16',
+                href: '/favicon-16x16.png'
+            },
+            { rel: 'manifest', href: '/site.webmanifest' },
+            {
+                rel: 'mask-icon',
+                href: '/safari-pinned-tab.svg',
+                color: '#800080'
+            }
+        ]
     },
     /*
      ** Customize the progress-bar color
@@ -58,7 +84,12 @@ export default {
                     },
                     {
                         set: '@fortawesome/free-brands-svg-icons',
-                        icons: ['fab', 'faGithubSquare', 'faGithub', 'faLinkedin']
+                        icons: [
+                            'fab',
+                            'faGithubSquare',
+                            'faGithub',
+                            'faLinkedin'
+                        ]
                     }
                     // import 2 icons from set
                     // please note this is PRO set in this example,
