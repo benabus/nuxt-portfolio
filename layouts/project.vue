@@ -39,7 +39,13 @@ export default {
     head() {
         return {
             title: this.page.title,
-            titleTemplate: "%s - Ben Serrette's Portfolio"
+            titleTemplate: "%s - Ben Serrette's Portfolio",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content:`${this.page.title} - Ben Serrette's Portfolio`},
+                { hid: 'og:description', property: 'og:description', content: this.page.subtitle},
+                { hid: 'og:url', property: 'og:url', content:`http://benserrette.com/${this.page_name}`},
+                { hid: 'og:image', property: 'og:image', content:`http://benserrette.com${this.cover_image}`},
+            ]
         };
     }
 };

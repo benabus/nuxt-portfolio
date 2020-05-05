@@ -17,7 +17,14 @@ export default {
                 content: process.env.npm_package_description || ''
             },
             { name: 'msapplication-TileColor', content: '#800080' },
-            { name: 'theme-color', content: '#ffffff' }
+            { name: 'theme-color', content: '#ffffff' },
+            { hid: 'og:type', property: 'og:type', content:'website'},
+            { hid: 'og:site_name', property: 'og:site_name', content:`Ben Serrette's Portfolio`},
+            { hid: 'og:title', property: 'og:title', content:`Ben Serrette's Portfolio`},
+            { hid: 'og:description', property: 'og:description', content:`Ben Serrette's Portfolio`},
+            { hid: 'og:url', property: 'og:url', content:'http://benserrette.com'},
+            { hid: 'og:image', property: 'og:image', content:'http://benserrette.com/assets/img/truck.jpg'},
+
         ],
         link: [
             {

@@ -15,8 +15,8 @@ export default {
 
         <footer>
             <div>
-                <div class="container d-flex justify-content-between">
-                    <div>
+                <div class="container d-md-flex justify-content-between">
+                    <div class="">
                         &copy; <span v-text="year">2020</span> Ben Serrette
                     </div>
                     <div class="small">

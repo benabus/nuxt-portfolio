@@ -22,7 +22,12 @@ export default {
 
     head() {
         return {
-            titleTemplate: "Ben Serrette's Portfolio"
+            titleTemplate: "Ben Serrette's Portfolio",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content:`Ben Serrette's Portfolio`},
+                { hid: 'og:description', property: 'og:description', content: 'Front-end Mid Stack Web Developer'},
+                { hid: 'og:url', property: 'og:url', content:`http://benserrette.com/`}
+            ]
         };
     }
 };

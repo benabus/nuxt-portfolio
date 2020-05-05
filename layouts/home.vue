@@ -7,9 +7,19 @@ export default {
         HeaderNav,
         MainFooter
     },
+    computed: {
+        page_name() {
+            return this.$route.name;
+        }
+    },
     head() {
         return {
-            titleTemplate: "%s - Ben Serrette's Portfolio"
+            titleTemplate: "%s - Ben Serrette's Portfolio",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content:`${this.page_name} - Ben Serrette's Portfolio`},
+                { hid: 'og:description', property: 'og:description', content: this.page_name},
+                { hid: 'og:url', property: 'og:url', content:`http://benserrette.com/${this.page_name}`}
+            ]
         };
     }
 };
