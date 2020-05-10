@@ -8,21 +8,27 @@ export default {
                     'Nuxt',
                     // 'AngularJS',
                     'jQuery',
-                    'ES6',
-                    'Promises',
-                    'Closures',
-                    'AJAX'
+                    // 'ES6',
+                    // 'Promises',
+                    // 'Closures',
+                    // 'AJAX'
                 ],
-                HTML: ['HTML5', 'XHTML', 'Semantic HTML5'],
-                CSS: ['Sass', 'CSS3', 'Bootstrap 4'],
+                HTML: ['HTML5', 'XHTML',
+                //  'Semantic HTML5'
+                 ],
+                CSS: ['Sass',
+                //  'CSS3', 
+                 'Bootstrap 4'],
                 Python: ['Flask'],
                 PHP: [],
                 SQL: ['MySQL', 'PostgreSQL'],
                 Git: ['Github'],
                 Design: [
-                    'User Experience (UX) Design',
-                    'User Interface design',
-                    'Responsive Design'
+                    // 'UX Design',
+                    // 'UI Design',
+                    'User Experience (UX)',
+                    'Interfaces',
+                    'Responsive'
                 ],
                 Middleware: ['REST APIs', 'JSON', 'AWS'],
                 'Build Tools': ['Node.js', 'NPM', 'Gulp'],
@@ -32,7 +38,10 @@ export default {
                     'Jira',
                     'Slack'
                 ],
-                Illustration: ['Graphical Storytelling (Storyboarding)'],
+                Illustration: [
+                    'Graphical Storytelling (Storyboarding)',
+                    'Comics',
+                    ],
                 'Soft Skills': ['Healthy sense of humor', 'Good looking'],
                 Troubleshooting: [
                     'A/V Setups',
