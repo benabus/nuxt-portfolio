@@ -1,5 +1,10 @@
 <script>
+import Email from '@/components/email';
+
 export default {
+    components: {
+        Email
+    },
     layout: 'project'
 };
 </script>
@@ -29,6 +34,10 @@ export default {
             <!-- More information can be found at <a href="http://www.captainnumbskull.com"
                target="_blank"
                rel="noopener noreferrer">http://www.captainnumbskull.com</a>. -->
+        </p>
+
+        <p>
+            Want a copy?  Hit me up at <email /> and we can work something out.
         </p>
 
         <!-- <h3>The Website</h3>

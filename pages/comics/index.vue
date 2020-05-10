@@ -1,5 +1,9 @@
 <script>
+import Email from '@/components/email';
 export default {
+    components: {
+        Email
+    },
     layout: 'project'
 };
 </script>
@@ -46,6 +50,9 @@ export default {
         </p>
         <p>
             The website was originally built with Ruby on Rails, but is now defunct. A collection of some of my favorite Strips can be found <nuxt-link to="/comics/strips-4-singles">here</nuxt-link>.
+        </p>
+        <p>
+            Want your own Strip 4 Singles?  Hit me up at <email /> and we can work something out.
         </p>
         <div class="clearfix"></div>
         <hr />
