@@ -1,10 +1,10 @@
 <script>
-import Poncho from '@/components/poncho';
+// import Poncho from '@/components/poncho';
 
 export default {
-    components: {
-        Poncho
-    },
+    // components: {
+    //     Poncho
+    // },
     data() {
         return {
             menu_open: false,
@@ -27,14 +27,15 @@ export default {
         <div class="container d-flex align-items-end justify-content-between">
             <nuxt-link class="navbar-brand"
                to="/">
-                <div class="d-flex">
-                    <div class="navbar-poncho">
-                        <poncho />
-                    </div>
-                    <div>
-                        <span>Ben</span>
-                        <span>Serrette</span>
-                    </div>
+                <div class="d-flex align-items-middle">
+                    <!-- <div class="navbar-poncho d-flex align-items-middle"> -->
+                        <!-- <poncho /> -->
+                        <img src="@/static/assets/img/poncho.png" class="poncho-logo mr-2" alt="poncho-logo" />
+                    <!-- </div>
+                    <div class=" d-flex align-items-middle"> -->
+                        <div class="mr-2">Ben</div>
+                        <div>Serrette</div>
+                    <!-- </div> -->
                 </div>
             </nuxt-link>
             <button class="navbar-toggler toggle-button"
@@ -87,30 +88,23 @@ nav {
     text-shadow: $text-outline-1;
 }
 .navbar-brand {
-    overflow: hidden;
+    color: yellow;
 }
 .toggle-button {
     color: $yellow;
     font-size: 2rem;
-}
-.navbar-poncho {
-    svg {
-        height: 4rem;
-    }
-    height: 2rem;
-    overflow: hidden;
-    fill: $yellow;
+    text-shadow: $text-outline-1;
+    path {
     stroke: black;
-    stroke-width: 3px;
-    margin-right: 1rem;
-}
-footer {
-    overflow: hidden;
-    padding-top: 1rem;
-    & > div {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        box-shadow: $top-shadow;
+    stroke-width: 20;
     }
+}
+.poncho-logo
+{
+    line-height: 1;
+    display: block;
+    height: 2rem;
+    max-height: 100%;
+    margin-top: -1px;
 }
 </style>
