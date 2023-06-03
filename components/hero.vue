@@ -11,7 +11,8 @@ export default {
         <div class="d-flex justify-content-between">
             <div class="hero-text">
                 <h1>Ben Serrette</h1>
-                <div class="subtitle">Front-end Mid Stack Web Developer</div>
+                <div class="subtitle">People Leader &bull; Project Manager</div>
+                <div class="subtitle">Former Developer and Illustrator</div>
                 <div class="icons">
                     <a href="https://github.com/benabus/"
                        target="_blank">
@@ -40,6 +41,11 @@ export default {
     svg {
         margin-right: -9rem;
     }
+}
+
+.subtitle
+{
+    white-space:  nowrap;
 }
 
 .icons {

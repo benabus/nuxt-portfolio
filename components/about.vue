@@ -47,8 +47,12 @@ export default {
             <img class="figure-img img-fluid rounded m-0"
                  :src="'/assets/img/tie.jpg'" />
         </figure>
-        <p>
+
+        <!-- <p>
             As a front-end mid stack web developer, I do it all. I'm just better at front-ends and middleware. Interfaces and APIs with a sprinkle of database and system administration as necessary.
+        </p> -->
+        <p>
+            With over 15 years of experience in software development, I am uniquely qualified to lead tech teams with experience and empathy.  I've been in the trenches and have seen things go wrong, which allows me to successfully get my team through the tough times.
         </p>
         <p>
             Web development has been in my blood since the late 1990's (Geocities, anyone?) and I've been coding professionally since 2005. On the side, I occasionally make comics and illustrations. My design skills aren't too bad, but I do fancy Comic Sans because it’s fun and pretentious artsy designer types hate it.
