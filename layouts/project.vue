@@ -57,16 +57,7 @@ export default {
 
         <header-nav />
         <main class="container">
-            <div v-if="cover_image"
-                 class="card float-md-right mb-3 ml-md-3 col-12 col-md-4">
-                <img class="card-img-top"
-                     :src="cover_image"
-                     :alt="cover_image_caption" />
-                <div v-if="cover_image_caption"
-                     class="figure-caption text-center card-body"
-                     v-text="cover_image_caption"></div>
-            </div>
-
+            
             <h1 v-text="title"></h1>
             <div class="subtitle"
                  v-text="subtitle"></div>
@@ -76,6 +67,17 @@ export default {
                v-text="blurb"></p>
 
             <hr />
+
+            <div v-if="cover_image"
+                 class="card float-md-right mb-3 ml-md-3 col-12 col-md-4 p-3">
+                <img class="card-img-top"
+                     :src="cover_image"
+                     :alt="cover_image_caption" />
+                <div v-if="cover_image_caption"
+                     class="figure-caption text-center card-body"
+                     v-text="cover_image_caption"></div>
+            </div>
+
 
             <nuxt ref="page" />
         </main>

@@ -17,10 +17,10 @@ export default {
             </footer>
         </blockquote>
         <p>
-            CAM was built at IUNI for <a href="http://netsci2017.iuni.iu.edu/" target='_blank'>NetSci 2017</a>, and then used again for <a href="http://iuni.iu.edu/netsci2018/cam/#/" target="_blank">NetSci 2018</a>. 
+            CAM was built at IUNI for NetSci 2017, and then used again for NetSci 2018. 
         </p> 
         <p>
-            The front-end is built using Quasar with the intention of compiling it into a native mobile app.  Backend is PHP and MySQL, chosen based on the technology available on the server.
+            The front-end was built using Quasar with the intention of compiling it into a native mobile app.  Backend is PHP and MySQL, chosen based on the technology available on the server.
         </p>
     </div>
 </template>

@@ -17,7 +17,7 @@ export default {
             <div>
                 <div class="container d-md-flex justify-content-between">
                     <div class="">
-                        &copy; <span v-text="year">2020</span> Ben Serrette
+                        &copy; <span v-text="year"></span> Ben Serrette
                     </div>
                     <div class="small">
                         Website created using Nuxt.js and Bootstrap

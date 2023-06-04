@@ -35,11 +35,15 @@ export default {
         </p>
 
         <p>
-            The members of the Hoaxy team have changed multiple times over the course of its development. It has been comprised primarily of graduate students. During my time as lead developer I was given the opportunity to train and mentor many of the incoming developers, in addition to my actual development work.
+            The members of the Hoaxy team have changed multiple times over the course of its development. In the beginning, it has been comprised primarily of graduate students. During my time as lead developer I was given the opportunity to train and mentor many of the incoming developers on the project.  After becoming IT Director, development has been taken over by my team of software engineers.
         </p>
 
         <p>
-            Hoaxy is open source and its front-end can be found on
+            After Twitter discontinued its free API plans, OSoMe was unable to maintain Hoaxy's search capabilities directly.  It now offers a few free searches, afterwhich a user with a paid plan must input their bearer token and use their own search quota.
+        </p>
+
+        <p>
+            An older, open source version of Hoaxy's frontend code can be found on 
             <a href="https://github.com/IUNetSci/hoaxy-frontend"
                target="_blank">GitHub</a>.
         </p>

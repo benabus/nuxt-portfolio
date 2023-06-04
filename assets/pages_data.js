@@ -1,4 +1,23 @@
 const pages = {
+    
+    'vaporbot': {
+        stub: 'vaporbot',
+        type: 'software',
+        title: 'VaporBot',
+        subtitle: 'Music Generating Youtube Bot',
+        cover_image: '/assets/img/project_covers/vaporbot.png',
+        blurb: '',
+        cover_image_caption: 'Album Cover for "Off The Fritz" by Vaporbot'
+    },    
+    'the-stache': {
+        stub: 'the-stache',
+        type: 'software',
+        title: 'The Stache',
+        subtitle: 'Video Game About a Man Missing his Mustache',
+        cover_image: '/assets/img/project_covers/wallpaper.jpg',
+        blurb: '',
+        cover_image_caption: 'Title Screen for The Stache'
+    },
     enso: {
         stub: 'enso',
         type: 'software',

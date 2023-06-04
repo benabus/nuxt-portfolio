@@ -51,16 +51,9 @@ export default {
         </section>
         <hr class="" />
         <section class="container">
-            <a id="skills"
-               class="bookmark"></a>
-            <h2>Enumerated Qualifications</h2>
-            <skills-section></skills-section>
-        </section>
-        <hr class="" />
-        <section class="container">
             <a id="projects"
                class="bookmark"></a>
-            <h2>Software Projects</h2>
+            <h2>Projects</h2>
             <projects-section></projects-section>
         </section>
         <hr class="" />
@@ -69,6 +62,13 @@ export default {
                class="bookmark"></a>
             <h2>Illustrations</h2>
             <projects-section project-type="illustration"></projects-section>
+        </section>
+        <hr class="" />
+        <section class="container">
+            <a id="skills"
+               class="bookmark"></a>
+            <h2>Enumerated Qualifications</h2>
+            <skills-section></skills-section>
         </section>
     </div>
 </template>

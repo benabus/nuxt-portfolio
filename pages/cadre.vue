@@ -23,7 +23,7 @@ export default {
         </p>
 
         <p>
-            As lead software engineer, I was able to lead the IUNI IT Team to success in the design and implementation of the <a href="https://cadre.iu.edu/gateway" target="_blank">CADRE Gateway</a>. The architecture and functionality was designed and developed collaboratively by the entire IUNI IT team, utilizing each of our specific areas of expertise.
+            As lead software engineer, I was able to lead the IUNI IT Team to success in the design and implementation of the CADRE Gateway. The architecture and functionality was designed and developed collaboratively by the entire IUNI IT team, utilizing each of our specific areas of expertise.
         </p>
 
         <p>
@@ -31,7 +31,11 @@ export default {
         </p>
 
         <p>
-            <a href="https://cadre.iu.edu" target="_blank">CADRE's "marketing" site</a> was designed by our in-house graphic/UX designer and executed by myself. It is built hosted on an AWS EC2 instance and uses the flat-file CMS Grav.  Because Amazon limits the email sent by EC2 instances, the contact form takes advantage of AWS's SNS services.
+            CADRE's "marketing" site was designed by our in-house graphic/UX designer and executed by myself. It is built hosted on an AWS EC2 instance and uses the flat-file CMS Grav.  Because Amazon limits the email sent by EC2 instances, the contact form takes advantage of AWS's SNS services.
+        </p>
+
+        <p>
+            Upon becoming Director of Information Technology, I discovered that the continued support of CADRE was a liability, costing IUNI significant resources.  I successfully brokered a deal to quietly sunset the project, saving thousands of dollars in human resources, positively affecting the mental health of my entire team.
         </p>
     </div>
 </template>

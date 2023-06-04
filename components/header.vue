@@ -56,17 +56,17 @@ export default {
                     <li class="nav-item"
                         @click="closeMenu()">
                         <nuxt-link class="nav-link"
-                           to="/#skills">Skills</nuxt-link>
-                    </li>
-                    <li class="nav-item"
-                        @click="closeMenu()">
-                        <nuxt-link class="nav-link"
-                           to="/#projects">Development</nuxt-link>
+                           to="/#projects">Projects</nuxt-link>
                     </li>
                     <li class="nav-item"
                         @click="closeMenu()">
                         <nuxt-link class="nav-link"
                            to="/#illustration">Illustration</nuxt-link>
+                    </li>
+                    <li class="nav-item"
+                        @click="closeMenu()">
+                        <nuxt-link class="nav-link"
+                           to="/#skills">Skills</nuxt-link>
                     </li>
                 </ul>
             </div>

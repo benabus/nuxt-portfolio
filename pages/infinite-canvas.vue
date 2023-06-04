@@ -8,9 +8,9 @@ export default
 <template>
 <div>
 
-    <h3>
+    <h2>
         Summary
-    </h3>
+    </h2>
     <p>
         This is the home of my Masters Capstone project. The overall concept
         involves bringing Scott McCloud’s idea of the Infinite Canvas into the
@@ -40,7 +40,7 @@ export default
         target="_blank">http://vimeo.com/13216700</a>.
     </p>
 
-    <h3>Introduction</h3>
+    <h2>Introduction</h2>
 
     <p>
         Comics, as most people think about them, have been around since the late
