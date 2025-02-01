@@ -1,56 +1,88 @@
 <script>
 export default {
+    props: {
+        level: { type: Number, default: 0 }
+    },
     data() {
         return {
-            skills: {
-                JavaScript: [
-                    'Vue.js',
-                    'Nuxt',
-                    // 'AngularJS',
-                    'jQuery',
-                    // 'ES6',
-                    // 'Promises',
-                    // 'Closures',
-                    // 'AJAX'
-                ],
-                HTML: ['HTML5', 'XHTML',
-                //  'Semantic HTML5'
-                 ],
-                CSS: ['Sass',
-                //  'CSS3', 
-                 'Bootstrap 4'],
-                Python: ['Flask'],
-                PHP: [],
-                SQL: ['MySQL', 'PostgreSQL'],
-                Git: ['Github'],
-                Design: [
-                    // 'UX Design',
-                    // 'UI Design',
-                    'User Experience (UX)',
-                    'Interfaces',
-                    'Responsive'
-                ],
-                Middleware: ['REST APIs', 'JSON', 'AWS'],
-                'Build Tools': ['Node.js', 'NPM', 'Gulp'],
-                'Data Visualization': ['D3', 'Sigma.js'],
-                'Agile Development': [
-                    'Certified Professional Scrum Master (PSMI)',
-                    'Jira',
-                    'Slack'
-                ],
-                Illustration: [
-                    'Graphical Storytelling (Storyboarding)',
-                    'Comics',
+            skills_array: 
+            [
+
+
+                {
+                    JavaScript: [
+                        'Vue.js',
+                        'Typescript'
                     ],
-                'Soft Skills': ['Healthy sense of humor', 'Good looking'],
-                Troubleshooting: [
-                    'A/V Setups',
-                    'Teleconferencing',
-                    'Zoom',
-                    'Wire jiggling'
-                ],
-                'Tough Stuff': ['Network Science', 'Big Data (Hadoop)']
-            },
+                    HTML: ['HTML5', 'XHTML',
+                    //  'Semantic HTML5'
+                    ],
+                    CSS: ['Sass',
+                    //  'CSS3', 
+                    'Bootstrap'],
+                    Python: ['Flask'],
+                    PHP: [],
+                    Databases: ['SQL', 'PostgreSQL'],
+                    Git: ['Github', 'Github Projects'],
+                    Design: [
+                        'User Experience (UX)',
+                        'Interfaces',
+                        'Responsive Design'
+                    ],
+                    Middleware: ['REST APIs', 'JSON', 'AWS'],
+                    'Data Visualization': ['D3', 'Sigma.js'],
+                    'Agile Development': [
+                        'Certified Professional Scrum Master (PSMI)',
+                    ],
+                    Illustration: [
+                        'Graphical Storytelling (Storyboarding)',
+                        'Comics',
+                    ],
+                    Management: ['Budgeting', 'Scheduling', 'Resource Allocation', 'Communication', 'Stakeholder Management'],
+                    'Soft Skills': ['Healthy sense of humor', 'Good looking'],
+                },
+
+
+
+
+                {
+                    Javascript: [
+                        'Nuxt',
+                        'AngularJS',
+                        'jQuery',
+                        'ES6',
+                        'Promises',
+                        'Closures',
+                        'AJAX',
+                        'React',
+                    ],
+                    CSS: [
+                        "Tailwind"
+                    ],
+                    "Ruby on Rails":[],
+                    Databases: [
+                        "Redis",
+                        "MySQL",
+                        "Graph Databases",
+
+                    ],
+                
+                    'Build Tools': ['Node.js', 'NPM', 'Gulp'],
+                    'Agile Development': [
+                        'Kanban',
+                        'Jira',
+                        'Slack'
+                    ],
+                    Troubleshooting: [
+                        'A/V Setups',
+                        'Teleconferencing',
+                        'Zoom',
+                        'Wire jiggling'
+                    ],
+                    
+                    'Other': ['Network Science', 'Big Data (Hadoop)', "Data Collection"]
+                }
+            ],
             stack: {
                 'Vue.js': 'vue_logo.svg',
                 Python: 'python_logo.svg',
@@ -58,46 +90,55 @@ export default {
                 Postgresql: 'postgresql_logo.svg'
             }
         };
-    }
+    },
+    computed: {
+        skills(){
+            const skills = this.skills_array[this.level]
+            return skills;
+        }
+    },
 };
 </script>
 
 <template>
-    <div class="d-flex flex-column flex-md-row">
-
-        <ul class="list-unstyled two-column">
-            <li v-for="(items, category) in skills"
-                :key="category"
-                class="">
-                <span v-text="category"></span>
-                <div v-if="items.length > 0">
-                    <span v-text="items.join(', ')"></span>
-                </div>
-            </li>
-        </ul>
-
-        <div class="stack d-flex flex-md-column flex-row justify-content-around ml-md-3"
-             title="The VPAP Stack">
-            <div v-for="(image, name) in stack"
-                 :key="name"
-                 class="stack-item">
-                <img :src="`/assets/img/${image}`"
-                     :alt="name" />
-            </div>
+    <div>
+        <div>
+        <div class="">
+            <ul class="list-unstyled two-column">
+                <li v-for="(items, category) in skills"
+                    :key="category"
+                    class="">
+                    <span v-text="category"></span>
+                    <div v-if="items.length > 0">
+                        <span v-text="items.join(', ')"></span>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
+    
+</div>
 </template>
 
 <style lang="scss" scoped>
-.two-column {
-    column-count: 2;
-    column-gap: 1rem;
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+.two-column
+{
+
+    max-width: 100%;
+    margin: auto;
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        columns: 2;
+    }
+    
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        columns: 3;
+    }
 }
-.two-column li {
-    break-before: left;
-    break-after: right;
-    break-inside: avoid;
-}
+
 li div {
     font-size: 0.875rem;
     margin-left: 1rem;

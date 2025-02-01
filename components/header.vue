@@ -53,16 +53,16 @@ export default {
                         <nuxt-link class="nav-link"
                            to="/#about">About</nuxt-link>
                     </li>
-                    <li class="nav-item"
+                    <!-- <li class="nav-item"
                         @click="closeMenu()">
                         <nuxt-link class="nav-link"
                            to="/#projects">Projects</nuxt-link>
-                    </li>
-                    <li class="nav-item"
+                    </li> -->
+                    <!-- <li class="nav-item"
                         @click="closeMenu()">
                         <nuxt-link class="nav-link"
                            to="/#illustration">Illustration</nuxt-link>
-                    </li>
+                    </li> -->
                     <li class="nav-item"
                         @click="closeMenu()">
                         <nuxt-link class="nav-link"

@@ -3,7 +3,7 @@
 import HeroSection from '@/components/hero';
 import AboutSection from '@/components/about';
 import SkillsSection from '@/components/skills';
-import ProjectsSection from '@/components/projects';
+// import ProjectsSection from '@/components/projects';
 
 export default {
     layout: 'home',
@@ -11,7 +11,7 @@ export default {
         HeroSection,
         AboutSection,
         SkillsSection,
-        ProjectsSection
+        // ProjectsSection
     },
     data() {
         return {};
@@ -50,25 +50,32 @@ export default {
             <about-section></about-section>
         </section>
         <hr class="" />
-        <section class="container">
+        <!-- <section class="container">
             <a id="projects"
                class="bookmark"></a>
             <h2>Projects</h2>
             <projects-section></projects-section>
         </section>
-        <hr class="" />
-        <section class="container">
+        <hr class="" /> -->
+        <!-- <section class="container">
             <a id="illustration"
                class="bookmark"></a>
             <h2>Illustrations</h2>
             <projects-section project-type="illustration"></projects-section>
-        </section>
-        <hr class="" />
+        </section>-->
+        <hr class="" /> 
         <section class="container">
             <a id="skills"
                class="bookmark"></a>
-            <h2>Enumerated Qualifications</h2>
-            <skills-section></skills-section>
+            <h2>Things I'm Good At</h2>
+            <skills-section :level="0"></skills-section>
+        </section>
+        <hr class="" /> 
+        <section class="container">
+            <a id=""
+               class="bookmark"></a>
+            <h2>Other Things I've Worked With</h2>
+            <skills-section :level="1"></skills-section>
         </section>
     </div>
 </template>

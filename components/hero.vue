@@ -11,8 +11,16 @@ export default {
         <div class="d-flex justify-content-between">
             <div class="hero-text">
                 <h1>Ben Serrette</h1>
-                <div class="subtitle">People Leader &bull; Project Manager</div>
-                <div class="subtitle">Former Developer and Illustrator</div>
+                <!-- <div class="subtitle">People Leader &bull; Project Manager</div>
+                <div class="subtitle">Former Developer and Illustrator</div> -->
+                
+                <div class="subtitle">
+                    <span class="d-md-block">Developer</span>
+                    <span class="d-md-none">&bull;</span>
+                    <span class="d-md-block">Manager</span>
+                    <span class="d-md-none">&bull;</span>
+                    <span class="d-md-block">Leader</span>
+                </div>
                 <div class="icons">
                     <a href="https://github.com/benabus/"
                        target="_blank">

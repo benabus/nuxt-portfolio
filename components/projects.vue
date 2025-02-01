@@ -1,6 +1,6 @@
 <script>
 
-import {software, illustration} from '@/assets/pages_data.js';
+import {software} from '@/assets/pages_data.js';
 
 export default {
     props: {
@@ -11,7 +11,7 @@ export default {
     },
     data() {
         return {
-            project_data: this.projectType === "software"?software:illustration
+            project_data: this.projectType === "software"?software:[]
         };
     }
 };
